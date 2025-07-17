@@ -23,8 +23,8 @@ def send_pushbullet(title, message):
         print("Push gönderilemedi", response.text)
 
 def extract_otp(text):
-    match = re.search(r"\b\d{4,8}\b", text)
-    return match.group(0) if match else None
+    match = re.search(r"doğrulama kodunuz[:：]?\s*(\d{4,8})", text, re.IGNORECASE)
+    return match.group(1) if match else None
 
 def get_sms_list(limit=5):
     result = subprocess.run(['termux-sms-list', '-l', str(limit)], capture_output=True, text=True)
@@ -37,7 +37,7 @@ def main():
     print("OTP bot başlatıldı... Gelen SMS'ler dinleniyor.")
     while True:
         sms_list = get_sms_list()
-        vfs_msgs = [sms for sms in sms_list if "VFS" in sms.get('body', '').upper()]
+        vfs_msgs = [sms for sms in sms_list if "KOSMOSVISA" in sms.get('body', '').upper()]
         if not vfs_msgs:
             time.sleep(12)
             continue
