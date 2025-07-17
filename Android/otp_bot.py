@@ -37,7 +37,7 @@ def main():
     print("OTP bot başlatıldı... Gelen SMS'ler dinleniyor.")
     while True:
         sms_list = get_sms_list()
-        vfs_msgs = [sms for sms in sms_list if "KOSMOSVISA" in sms.get('body', '').upper()]
+        vfs_msgs = [sms for sms in sms_list if "KOSMOSVIZE" in sms.get('body', '').upper()]
         if not vfs_msgs:
             time.sleep(12)
             continue
