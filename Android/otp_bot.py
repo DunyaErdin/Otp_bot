@@ -4,7 +4,7 @@ import re
 import time
 import requests
 
-token = "o.Pf0fBOfNtKuAWtCxBm0JIvY4yj15s9uV"
+token = "API_KEY"
 
 def send_pushbullet(title, message):
     data = {
