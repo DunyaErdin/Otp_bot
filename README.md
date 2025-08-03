@@ -36,4 +36,4 @@ Bu proje, SMS yoluyla gönderilen OTP (tek kullanımlık şifre) kodlarını oto
 
 ## Lisans
 
-Bu proje GNU Lisansı ile yayımlanmıştır.
+Bu proje GNU 3.0 Lisansı ile yayımlanmıştır.
