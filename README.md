@@ -34,6 +34,8 @@ Bu proje, SMS yoluyla gönderilen OTP (tek kullanımlık şifre) kodlarını oto
 
 ---
 
+![Logo](https://github.com/DunyaErdin/DunyaErdin/blob/master/Dunya.png)
+
 ## Lisans
 
 Bu proje GNU 3.0 Lisansı ile yayımlanmıştır.
